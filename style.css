@@ -1,0 +1,231 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.entire-section
+{
+    height: 100%;
+}
+
+header
+{
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    color: whitesmoke;
+}
+
+h3
+{
+    font-size: 30px;
+}
+
+nav
+{
+    padding: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: whitesmoke;
+    display: inline-block;
+    width: 5rem;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+nav a:hover
+{
+    border-bottom: 2px solid whitesmoke;
+}
+
+main
+{
+    height: 90%;
+    background-image: url(camerapick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg-color
+{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.701);
+}
+
+h1
+{
+    padding: 1rem 0 1rem 0;
+    color: white;
+}
+
+.learn
+{
+    color: white;
+    border: white 3px solid;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    border-radius: 10px;
+    width: 12.5rem;
+    text-align: center;
+    font-weight: 700;
+    transition: all 0.25s;
+}
+
+.sub
+{
+    color: black;
+    border: white 3px solid;
+    background-color: white;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    border-radius: 10px;
+    width: 12.5rem;
+    text-align: center;
+    font-weight: 700;
+    transition: all 0.25s;
+}
+
+.learn:hover
+{
+    transform: scale(1.1);
+    color: black;
+    border: white 3px solid;
+    background-color: white;
+}
+
+.learn:active
+{
+    transform: scale(0.9);
+    color: black;
+    border: white 3px solid;
+    background-color: white;
+}
+
+.sub:hover
+{
+    transform: scale(1.1);
+    color: black;
+    border: white 3px solid;
+    background-color: white;
+}
+
+.sub:active
+{
+    transform: scale(0.9);
+    color: black;
+    border: white 3px solid;
+    background-color: white;
+}
+
+.camera-links
+{
+    display: flex;
+}
+
+label
+{
+    display: none;
+}
+
+#home-link:hover, #about-link:hover, #services-link:hover, #feedback-link:hover, #contact-link:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
+
+@media screen and (max-width: 800px)
+{
+    h1
+    {
+        text-align: center;
+        width: 35rem;
+        font-size: 1.5rem;
+    }
+
+    .learn, .sub
+    {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) 
+{
+
+    label
+    {
+        font-size: 2rem;
+        padding: 0.8rem;
+        display: flex;
+    }
+
+    nav
+    {
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 540px)
+{
+    h1
+    {
+        text-align: center;
+        width: 25rem;
+        font-size: 1rem;
+    }
+
+    .learn, .sub
+    {
+        padding: 0.8rem;
+        font-size: 0.6rem;
+        width: 8.5rem;
+    }
+}
+
+@media screen and (max-width: 408px)
+{
+    h1
+    {
+        text-align: center;
+        width: auto;
+        font-size: 1.2rem;
+    }
+
+    .learn, .sub
+    {
+        padding: 0.6rem;
+        font-size: 0.6rem;
+        width: 8rem;
+    }
+}
